@@ -1,0 +1,4 @@
+export const UserActionTypes = {
+  FETCH_ALL_USERS: "FETCH_ALL_USERS",
+  FETCH_ALL_USERS_ERROR: "FETCH_ALL_USERS_ERROR",
+};

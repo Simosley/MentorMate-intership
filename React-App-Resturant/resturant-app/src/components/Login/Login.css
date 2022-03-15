@@ -1,0 +1,64 @@
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login__form > h1 {
+  font-style: 35px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.login__form > input {
+  min-width: 380px;
+  padding: 22px 0px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba 0, 0, 0, 0.24;
+  font-family: "Inter";
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.submit__btn {
+  padding: 17px 30px;
+  margin-top: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Inter";
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit__btn:hover {
+  background-color: #5f5e5e;
+}
+/*# sourceMappingURL=Login.css.map */

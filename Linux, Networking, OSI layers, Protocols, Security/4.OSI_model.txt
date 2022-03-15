@@ -1,0 +1,9 @@
+1.Physical layer- optical cable ,usb
+2.Data link layer - Ethernet,Point-to-Pint Protocol(PPP)
+3-Network layer - Internet Protocol, Internet Control Message Protocol (ICMP or "ping")
+4-Transport layer - TCP ,UDP
+5-Session layer - DLC (data link control), PAP (printer access control),
+6-Presentation layer - SSL, HTTP/ HTML (agent), FTP (server),
+7-Application layer -POP ,SMTP
+
+8 layer is the USER

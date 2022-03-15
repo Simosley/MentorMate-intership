@@ -1,0 +1,913 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: white;
+  margin: 60px;
+}
+
+.container .background-image {
+  background: url("../images/road-marking.jpg") repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 23%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container .main-container {
+  -webkit-box-shadow: 0 6px 6px 0px #9e9e9e;
+          box-shadow: 0 6px 6px 0px #9e9e9e;
+}
+
+.container .main-container .info-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100px;
+}
+
+.container .main-container .nameJob-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  border-right: 1px solid rgba(158, 158, 158, 0.3);
+}
+
+.container .main-container .nameJob-part .name-job {
+  margin-top: 20px;
+  margin-left: 6px;
+}
+
+.container .main-container .nameJob-part img {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .main-container .nameJob-part .name-job p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .main-container .nameJob-part .name-job p:nth-child(2) {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.container .main-container .emailAndPhone-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  height: 100%;
+  border-right: 1px solid rgba(158, 158, 158, 0.3);
+}
+
+.container .main-container .emailAndPhone-part .mail-phone-box {
+  margin-top: 20px;
+}
+
+.container .main-container .emailAndPhone-part .mail-phone-box p:first-child {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.container .main-container .emailAndPhone-part .mail-phone-box p:nth-child(2) {
+  margin-left: 10px;
+}
+
+.container .main-container .emailAndPhone-part .mail-phone-box i {
+  margin-right: 5px;
+}
+
+.container .main-container .location-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.container .main-container .location-part .location-text {
+  margin-top: 10px;
+}
+
+.container .main-container .location-part p:first-child {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.container .main-container .location-part p:nth-child(2) {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.container .main-container .location-part i {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.container .main-container .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50px;
+  background-color: rgba(158, 158, 158, 0.3);
+}
+
+.container .main-container .navigation a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.container .main-container .navigation a:hover {
+  background-color: rgba(158, 158, 158, 0.5);
+  border-bottom: 5px solid aqua;
+  cursor: pointer;
+}
+
+.container .main-container .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main-container .about-me img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 27%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .main-container .about-me .about-me-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.container .main-container .about-me .about-me-info h1 {
+  margin-left: 15px;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.container .main-container .about-me .about-me-info .about-me-text {
+  font-size: 15px;
+  margin: 15px;
+}
+
+.container .main-container .about-me .about-me-info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container .main-container .about-me .about-me-info .buttons .hire-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .main-container .about-me .about-me-info .buttons button {
+  background-color: white;
+  border-color: #9e9e9e;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 5px;
+  border-radius: 15px;
+}
+
+.container .main-container .about-me .about-me-info .buttons button:hover {
+  cursor: pointer;
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
+.container .main-container .about-me .about-me-info .buttons i {
+  text-align: center;
+}
+
+.container .main-container .about-me .about-me-info .buttons .icons-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .main-container .about-me .about-me-info .buttons .icons-links button {
+  border-radius: 50%;
+}
+
+.container .main-container .about-me .about-me-info .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.container .main-container .about-me .about-me-info .flex-container .more-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.container .main-container .about-me .about-me-info .flex-container .more-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(158, 158, 158, 0.7);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main-container .about-me .about-me-info .flex-container .more-info .first-pos {
+  margin-left: 5px;
+  border-right: 1px solid rgba(158, 158, 158, 0.7);
+  border-right: none;
+  width: 40%;
+}
+
+.container .services-container {
+  margin-top: 20px;
+  -webkit-box-shadow: 0 6px 6px 0px #9e9e9e;
+          box-shadow: 0 6px 6px 0px #9e9e9e;
+}
+
+.container .services-container .text-container {
+  padding: 50px;
+}
+
+.container .services-container .text-container p {
+  text-align: center;
+}
+
+.container .services-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .services-container .types-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px;
+}
+
+.container .services-container .types-services div {
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-box-flex: 33%;
+      -ms-flex: 33%;
+          flex: 33%;
+}
+
+.container .services-container i {
+  font-size: 50px;
+  color: #21b39f;
+  margin-bottom: 10px;
+}
+
+.container .services-container .service-text {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.container .services-container .service-header {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1048px) {
+  * {
+    font-size: 12px;
+  }
+  .container .main-container .location-part p:first-child {
+    font-size: 12px;
+  }
+  .container .main-container .location-part i {
+    font-size: 30px;
+    margin-top: 16px;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info {
+    width: 60%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .first-pos {
+    width: 60%;
+  }
+  .container .services-container h1 {
+    font-size: 16px;
+  }
+  .container .services-container i {
+    font-size: 40px;
+  }
+  .container .services-container .service-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .container .services-container .service-header {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+  .container .main-container .nameJob-part .name-job p:first-child {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .container .main-container .nameJob-part .name-job p:nth-child(2) {
+    font-style: italic;
+    font-size: 10px;
+  }
+  .container .main-container .emailAndPhone-part {
+    width: 33%;
+  }
+  .container .main-container .location-part {
+    width: 29%;
+  }
+  .container .main-container .location-part .location-text {
+    margin-top: 10px;
+  }
+  .container .main-container .location-part p:first-child {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .container .main-container .location-part p:nth-child(2) {
+    font-style: italic;
+    font-size: 11px;
+  }
+  .container .main-container .location-part i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 18px;
+  }
+  .container .main-container .about-me .about-me-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .container .main-container .about-me .about-me-info h1 {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .container .main-container .about-me .about-me-info .about-me-text {
+    font-size: 10px;
+    margin: 15px;
+  }
+  .container .main-container .about-me .about-me-info .buttons button {
+    font-size: 10px;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info {
+    width: 60%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .first-pos {
+    width: 60%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .posisiton {
+    margin-left: 10px;
+  }
+  .container .services-container {
+    margin-top: 10px;
+  }
+  .container .services-container .text-container {
+    padding: 40px;
+  }
+  .container .services-container h1 {
+    margin-bottom: 20px;
+  }
+  .container .services-container .types-services {
+    padding: 30px;
+  }
+  .container .services-container .types-services div {
+    margin-bottom: 30px;
+    -webkit-box-flex: 44%;
+        -ms-flex: 44%;
+            flex: 44%;
+  }
+  .container .services-container i {
+    font-size: 35px;
+    color: #21b39f;
+    margin-bottom: 10px;
+  }
+  .container .services-container .service-text {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .container .services-container .service-header {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  * {
+    font-size: 10px;
+  }
+  .container {
+    background-color: white;
+    margin: 60px;
+  }
+  .container .background-image {
+    background: url("../images/road-marking.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .container .main-container {
+    -webkit-box-shadow: 0 6px 6px 0px #9e9e9e;
+            box-shadow: 0 6px 6px 0px #9e9e9e;
+  }
+  .container .main-container .info-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100px;
+  }
+  .container .main-container .nameJob-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    border-right: 1px solid rgba(158, 158, 158, 0.3);
+  }
+  .container .main-container .nameJob-part .name-job {
+    margin-top: 20px;
+    margin-left: 6px;
+  }
+  .container .main-container .nameJob-part img {
+    width: 40px;
+    height: 40px;
+  }
+  .container .main-container .nameJob-part .name-job p:first-child {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .container .main-container .nameJob-part .name-job p:nth-child(2) {
+    font-style: italic;
+    font-size: 9px;
+  }
+  .container .main-container .emailAndPhone-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 32%;
+    height: 100%;
+    border-right: 1px solid rgba(158, 158, 158, 0.3);
+  }
+  .container .main-container .emailAndPhone-part .mail-phone-box {
+    margin-top: 20px;
+  }
+  .container .main-container .location-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 10%;
+    height: 100%;
+    margin-left: 20px;
+  }
+  .container .main-container .location-part .location-text {
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  .container .main-container .location-part p:first-child {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .container .main-container .location-part p:nth-child(2) {
+    font-style: italic;
+    font-size: 9px;
+  }
+  .container .main-container .location-part i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  .container .main-container .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .main-container .navigation a {
+    width: 100%;
+  }
+  .container .main-container .about-me {
+    display: inline;
+  }
+  .container .main-container .about-me img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .main-container .about-me .about-me-info h1 {
+    font-size: 20px;
+  }
+  .container .main-container .about-me .about-me-info .about-me-text {
+    font-size: 12px;
+    margin: 15px;
+  }
+  .container .main-container .about-me .about-me-info .buttons button {
+    font-size: 10px;
+    margin: 0px 0px;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info {
+    width: 50%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(158, 158, 158, 0.7);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .first-pos {
+    margin-left: 0px;
+    border-right: 1px solid rgba(158, 158, 158, 0.7);
+    border-right: none;
+    width: 60%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .posisiton {
+    margin-right: 10px;
+  }
+  .container .services-container {
+    margin-top: 0px;
+  }
+  .container .services-container .text-container {
+    padding: 40px;
+  }
+  .container .services-container h1 {
+    margin-bottom: 10px;
+  }
+  .container .services-container .types-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 30px;
+  }
+  .container .services-container .types-services div {
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .container .services-container i {
+    font-size: 25px;
+    color: #21b39f;
+    margin-bottom: 10px;
+  }
+  .container .services-container .service-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .container .services-container .service-header {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .container {
+    background-color: white;
+    margin: 60px;
+  }
+  .container .main-container {
+    -webkit-box-shadow: 0 6px 6px 0px #9e9e9e;
+            box-shadow: 0 6px 6px 0px #9e9e9e;
+  }
+  .container .main-container .info-about {
+    display: block;
+    height: 222px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .nameJob-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .nameJob-part .name-job {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .container .main-container .nameJob-part img {
+    border-radius: 50%;
+    width: 40px;
+    height: 70px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .container .main-container .nameJob-part .name-job p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .container .main-container .nameJob-part .name-job p:nth-child(2) {
+    font-style: italic;
+    font-size: 11px;
+  }
+  .container .main-container .emailAndPhone-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 32%;
+    border: none;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .emailAndPhone-part .mail-phone-box {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .container .main-container .emailAndPhone-part .mail-phone-box p:first-child {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .container .main-container .emailAndPhone-part .mail-phone-box p:nth-child(2) {
+    margin-left: 0px;
+    font-size: 15px;
+  }
+  .container .main-container .emailAndPhone-part .mail-phone-box i {
+    margin-right: 10px;
+  }
+  .container .main-container .location-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    margin-left: 0px;
+    margin-top: -20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .location-part .location-text {
+    margin-top: 15px;
+    margin-right: 50px;
+  }
+  .container .main-container .location-part p:first-child {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .container .main-container .location-part p:nth-child(2) {
+    font-style: italic;
+    font-size: 13px;
+  }
+  .container .main-container .location-part i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .container .main-container .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .main-container .navigation a {
+    width: 100%;
+  }
+  .container .main-container .about-me {
+    display: inline;
+  }
+  .container .main-container .about-me img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container .main-container .about-me .about-me-info h1 {
+    font-size: 19px;
+  }
+  .container .main-container .about-me .about-me-info .about-me-text {
+    font-size: 11px;
+    margin: 15px;
+  }
+  .container .main-container .about-me .about-me-info .buttons {
+    display: inline;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container .main-container .about-me .about-me-info .buttons .hire-download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .container .main-container .about-me .about-me-info .buttons button {
+    background-color: white;
+    border-color: #9e9e9e;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 15px;
+  }
+  .container .main-container .about-me .about-me-info .buttons button:hover {
+    cursor: pointer;
+    background-color: rgba(158, 158, 158, 0.5);
+  }
+  .container .main-container .about-me .about-me-info .buttons i {
+    text-align: center;
+  }
+  .container .main-container .about-me .about-me-info .buttons .icons-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .main-container .about-me .about-me-info .buttons .icons-links button {
+    font-size: 18px;
+  }
+  .container .main-container .about-me .about-me-info .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info {
+    width: 100%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(158, 158, 158, 0.7);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .first-pos {
+    margin-left: 0px;
+    border-right: 1px solid rgba(158, 158, 158, 0.7);
+    width: 60%;
+    height: 20%;
+  }
+  .container .main-container .about-me .about-me-info .flex-container .more-info .posisiton {
+    margin-right: 10px;
+  }
+  .container .services-container {
+    margin-top: 0px;
+  }
+  .container .services-container .text-container {
+    padding: 40px;
+  }
+  .container .services-container h1 {
+    margin-bottom: 10px;
+  }
+  .container .services-container .types-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 30px;
+  }
+  .container .services-container .types-services div {
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-box-flex: 60%;
+        -ms-flex: 60%;
+            flex: 60%;
+  }
+  .container .services-container i {
+    font-size: 25px;
+    color: #21b39f;
+    margin-bottom: 10px;
+  }
+  .container .services-container .service-text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .container .services-container .service-header {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

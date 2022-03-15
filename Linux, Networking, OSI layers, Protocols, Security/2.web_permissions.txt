@@ -1,0 +1,8 @@
+777 - readable, writable and executable by all users 
+This allows any user to run executable as root.
+Huge security risk
+
+
+The rights should be
+Directories 755
+Files 644

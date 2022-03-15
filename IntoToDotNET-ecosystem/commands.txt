@@ -1,0 +1,10 @@
+
+nuget restore MentorMate.Payments.App.sln
+
+cd MentorMate.Payments.App
+dotnet build
+dotnet run --project .\MentorMate.Payments.App.csproj
+
+
+cd MentorMate.Payments.Web
+dotnet run --project .\MentorMate.Payments.Web.csproj

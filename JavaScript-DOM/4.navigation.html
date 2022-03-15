@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>09. DOM, Events & Web APIs Tasks</title>
+
+    <style>
+      .url-bar {
+        display: inline-block;
+        padding: 4px 8px;
+        min-width: 200px;
+        border: 1px solid #000;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        border-bottom: 2px solid transparent;
+      
+
+      }
+
+      .active {
+        border-bottom-color: gold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="url-bar" class="url-bar">[Your URL bar]</div>
+
+    <nav id="main-nav">
+      <ul>
+                <li>
+                    <a  href="/"class="active">Home</a>
+                </li>
+                <li>
+                    <a href="/articles" >Articles</a>
+                </li>
+                <li>
+                    <a href="/resources">Resources</a>
+                </li>
+                <li>
+                    <a href="/settings">Settings</a>
+                </li>
+
+    </nav>
+
+    <script>
+      let navbarAnchorElements = document.querySelector("#main-nav").querySelectorAll("a");
+      navbarAnchorElements.forEach((anchorElement) => {
+        anchorElement.addEventListener("click", function () {
+          event.preventDefault();
+          navbarAnchorElements.forEach((a) => a.classList.remove("active"));
+          this.classList.add("active");
+          let inputField = document.getElementsByClassName("url-bar");
+          let getActiveClass = document.getElementsByClassName("active");
+          inputField[0].innerHTML = getActiveClass[0].href
+        });
+      });
+    </script>
+  </body>
+</html>

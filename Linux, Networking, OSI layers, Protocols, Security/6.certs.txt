@@ -1,0 +1,2 @@
+Self-Signed certificates do offer encryption, they offer no authentication and that's going to be a problem with the browsers
+Trusted CA Signed SSL Certificates, on the other hand, do offer authentication and that, in turn, allows them to avoid those pesky browser warnings and work as an SSL Certificate should.

@@ -1,0 +1,39 @@
+.logout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  font-family: "Inter";
+}
+
+.logout__button {
+  min-width: 200px;
+  padding: 17px 30px;
+  margin-top: 20px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout__button:hover {
+  background-color: #5f5e5e;
+}
+
+.user__name {
+  color: #8d0ada;
+}
+/*# sourceMappingURL=Logout.css.map */

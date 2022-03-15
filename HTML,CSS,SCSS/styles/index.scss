@@ -1,0 +1,810 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  .background-image {
+    background: url("../images/road-marking.jpg") repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  background-color: white;
+  margin: 60px;
+  .main-container {
+    box-shadow: 0 6px 6px 0px rgba(158, 158, 158, 1);
+    .info-about {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100px;
+    }
+    .nameJob-part {
+      display: flex;
+      width: 30%;
+      border-right: 1px solid rgba(158, 158, 158, 0.3);
+
+      .name-job {
+        margin-top: 20px;
+        margin-left: 6px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+        margin-left: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .name-job p:first-child {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .name-job p:nth-child(2) {
+        font-style: italic;
+        font-size: 13px;
+      }
+    }
+
+    .emailAndPhone-part {
+      display: flex;
+      width: 35%;
+      height: 100%;
+      border-right: 1px solid rgba(158, 158, 158, 0.3);
+      .mail-phone-box {
+        margin-top: 20px;
+      }
+
+      .mail-phone-box p:first-child {
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .mail-phone-box p:nth-child(2) {
+        margin-left: 10px;
+      }
+      .mail-phone-box i {
+        margin-right: 5px;
+      }
+    }
+
+    .location-part {
+      display: flex;
+      width: 30%;
+      height: 100%;
+      margin-left: 10px;
+
+      .location-text {
+        margin-top: 10px;
+      }
+
+      p:first-child {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      p:nth-child(2) {
+        font-style: italic;
+        font-size: 13px;
+      }
+      i {
+        font-size: 50px;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: flex-start;
+      height: 50px;
+      background-color: rgba(158, 158, 158, 0.3);
+      a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        width: 10%;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        background-color: rgba(158, 158, 158, 0.5);
+        border-bottom: 5px solid aqua;
+        cursor: pointer;
+      }
+    }
+
+    .about-me {
+      display: flex;
+      img {
+        border-radius: 4px;
+        padding: 5px;
+        width: 27%;
+        object-fit: cover;
+      }
+
+      .about-me-info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        h1 {
+          margin-left: 15px;
+          margin-top: 30px;
+          font-size: 30px;
+        }
+        .about-me-text {
+          font-size: 15px;
+          margin: 15px;
+        }
+        .buttons {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          .hire-download {
+            display: flex;
+            justify-content: flex-start;
+          }
+          button {
+            background-color: white;
+            border-color: rgba(158, 158, 158, 1);
+            padding: 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 5px;
+            border-radius: 15px;
+          }
+          button:hover {
+            cursor: pointer;
+            background-color: rgba(158, 158, 158, 0.5);
+          }
+          i {
+            text-align: center;
+          }
+          .icons-links {
+            display: flex;
+            justify-content: flex-end;
+          }
+          .icons-links button {
+            border-radius: 50%;
+          }
+        }
+        .flex-container {
+          display: flex;
+          justify-content: center;
+          margin: 10px;
+          .more-info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            div {
+              display: flex;
+              justify-content: flex-start;
+              width: 100%;
+              height: 120px;
+              border: 1px solid rgba(158, 158, 158, 0.7);
+              align-items: center;
+            }
+
+            .first-pos {
+              margin-left: 5px;
+              border-right: 1px solid rgba(158, 158, 158, 0.7);
+              border-right: none;
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .services-container {
+    margin-top: 20px;
+    box-shadow: 0 6px 6px 0px rgba(158, 158, 158, 1);
+    .text-container {
+      padding: 50px;
+    }
+    .text-container p {
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .types-services {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+    .types-services div {
+      text-align: center;
+
+      margin-bottom: 30px;
+      flex: 33%;
+    }
+    i {
+      font-size: 50px;
+      color: rgb(33, 179, 159);
+      margin-bottom: 10px;
+    }
+    .service-text {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .service-header {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1048px) {
+  * {
+    font-size: 12px;
+  }
+  .container {
+    .main-container {
+      .location-part {
+        p:first-child {
+          font-size: 12px;
+        }
+
+        i {
+          font-size: 30px;
+          margin-top: 16px;
+        }
+      }
+
+      .about-me {
+        .about-me-info {
+          .flex-container {
+            .more-info {
+              width: 60%;
+
+              .first-pos {
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .services-container {
+      h1 {
+        font-size: 16px;
+      }
+
+      i {
+        font-size: 40px;
+      }
+      .service-text {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      .service-header {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+  .container {
+    .main-container {
+      .nameJob-part {
+        .name-job p:first-child {
+          font-weight: bold;
+          font-size: 15px;
+        }
+        .name-job p:nth-child(2) {
+          font-style: italic;
+          font-size: 10px;
+        }
+      }
+
+      .emailAndPhone-part {
+        width: 33%;
+      }
+
+      .location-part {
+        width: 29%;
+
+        .location-text {
+          margin-top: 10px;
+        }
+
+        p:first-child {
+          margin-top: 10px;
+          font-size: 14px;
+        }
+        p:nth-child(2) {
+          font-style: italic;
+          font-size: 11px;
+        }
+        i {
+          font-size: 30px;
+          margin-right: 10px;
+          margin-top: 18px;
+        }
+      }
+
+      .about-me {
+        .about-me-info {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          h1 {
+            margin-left: 15px;
+            margin-top: 30px;
+            font-size: 15px;
+          }
+          .about-me-text {
+            font-size: 10px;
+            margin: 15px;
+          }
+          .buttons {
+            button {
+              font-size: 10px;
+            }
+          }
+          .flex-container {
+            .more-info {
+              width: 60%;
+
+              .first-pos {
+                width: 60%;
+              }
+              .posisiton {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .services-container {
+      margin-top: 10px;
+      .text-container {
+        padding: 40px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+      .types-services {
+        padding: 30px;
+      }
+      .types-services div {
+        margin-bottom: 30px;
+        flex: 44%;
+      }
+      i {
+        font-size: 35px;
+        color: rgb(33, 179, 159);
+        margin-bottom: 10px;
+      }
+      .service-text {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      .service-header {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  * {
+    font-size: 10px;
+  }
+  .container {
+    .background-image {
+      background: url("../images/road-marking.jpg") no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 23%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    background-color: white;
+    margin: 60px;
+    .main-container {
+      box-shadow: 0 6px 6px 0px rgba(158, 158, 158, 1);
+      .info-about {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+      }
+      .nameJob-part {
+        display: flex;
+        width: 30%;
+        border-right: 1px solid rgba(158, 158, 158, 0.3);
+
+        .name-job {
+          margin-top: 20px;
+          margin-left: 6px;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .name-job p:first-child {
+          font-weight: bold;
+          font-size: 13px;
+        }
+        .name-job p:nth-child(2) {
+          font-style: italic;
+          font-size: 9px;
+        }
+      }
+
+      .emailAndPhone-part {
+        display: flex;
+        width: 32%;
+        height: 100%;
+        border-right: 1px solid rgba(158, 158, 158, 0.3);
+        .mail-phone-box {
+          margin-top: 20px;
+        }
+      }
+
+      .location-part {
+        display: flex;
+        width: 10%;
+        height: 100%;
+        margin-left: 20px;
+
+        .location-text {
+          margin-top: 10px;
+          margin-right: 50px;
+        }
+
+        p:first-child {
+          margin-top: 15px;
+          font-size: 10px;
+        }
+        p:nth-child(2) {
+          font-style: italic;
+          font-size: 9px;
+        }
+        i {
+          font-size: 25px;
+          margin-right: 10px;
+          margin-top: 30px;
+        }
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+          width: 100%;
+        }
+      }
+
+      .about-me {
+        display: inline;
+        img {
+          border-radius: 4px;
+          padding: 5px;
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+
+        .about-me-info {
+          h1 {
+            font-size: 20px;
+          }
+          .about-me-text {
+            font-size: 12px;
+            margin: 15px;
+          }
+          .buttons {
+            button {
+              font-size: 10px;
+              margin: 0px 0px;
+            }
+          }
+          .flex-container {
+            .more-info {
+              width: 50%;
+
+              div {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                height: 60px;
+                border: 1px solid rgba(158, 158, 158, 0.7);
+                align-items: center;
+              }
+
+              .first-pos {
+                margin-left: 0px;
+                border-right: 1px solid rgba(158, 158, 158, 0.7);
+                border-right: none;
+                width: 60%;
+              }
+              .posisiton {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .services-container {
+      margin-top: 0px;
+      .text-container {
+        padding: 40px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+      .types-services {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      .types-services div {
+        text-align: center;
+
+        margin-bottom: 30px;
+        flex: 50%;
+      }
+      i {
+        font-size: 25px;
+        color: rgb(33, 179, 159);
+        margin-bottom: 10px;
+      }
+      .service-text {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+      }
+      .service-header {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .container {
+    background-color: white;
+    margin: 60px;
+    .main-container {
+      box-shadow: 0 6px 6px 0px rgba(158, 158, 158, 1);
+      .info-about {
+        display: block;
+        height: 222px;
+        align-items: center;
+      }
+      .nameJob-part {
+        display: flex;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+        align-items: center;
+
+        .name-job {
+          margin-top: 20px;
+          margin-left: 10px;
+        }
+        img {
+          border-radius: 50%;
+          width: 40px;
+          height: 70px;
+          margin-left: 0px;
+          margin-bottom: 5px;
+          object-fit: contain;
+        }
+        .name-job p:first-child {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        .name-job p:nth-child(2) {
+          font-style: italic;
+          font-size: 11px;
+        }
+      }
+      .emailAndPhone-part {
+        display: flex;
+        width: 100%;
+        height: 32%;
+        border: none;
+        border-bottom: 1px solid rgba(158, 158, 158, 0.5);
+        align-items: center;
+        .mail-phone-box {
+          margin-top: 10px;
+          margin-left: 5px;
+        }
+
+        .mail-phone-box p:first-child {
+          margin-left: 0px;
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
+        .mail-phone-box p:nth-child(2) {
+          margin-left: 0px;
+          font-size: 15px;
+        }
+        .mail-phone-box i {
+          margin-right: 10px;
+        }
+      }
+
+      .location-part {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        margin-left: 0px;
+        margin-top: -20px;
+        align-items: center;
+
+        .location-text {
+          margin-top: 15px;
+          margin-right: 50px;
+        }
+
+        p:first-child {
+          margin-top: 15px;
+          font-size: 15px;
+        }
+        p:nth-child(2) {
+          font-style: italic;
+          font-size: 13px;
+        }
+        i {
+          font-size: 30px;
+          margin-right: 10px;
+          margin-top: 30px;
+          margin-left: 5px;
+        }
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+          width: 100%;
+        }
+      }
+
+      .about-me {
+        display: inline;
+        img {
+          border-radius: 4px;
+          padding: 5px;
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+
+        .about-me-info {
+          h1 {
+            font-size: 19px;
+          }
+          .about-me-text {
+            font-size: 11px;
+            margin: 15px;
+          }
+          .buttons {
+            display: inline;
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            .hire-download {
+              display: flex;
+              justify-content: space-evenly;
+              margin-bottom: 20px;
+            }
+            button {
+              background-color: white;
+              border-color: rgba(158, 158, 158, 1);
+              padding: 6px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 13px;
+              border-radius: 15px;
+            }
+            button:hover {
+              cursor: pointer;
+              background-color: rgba(158, 158, 158, 0.5);
+            }
+            i {
+              text-align: center;
+            }
+            .icons-links {
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .icons-links button {
+              font-size: 18px;
+            }
+          }
+          .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            .more-info {
+              width: 100%;
+
+              div {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+                height: 60px;
+                border: 1px solid rgba(158, 158, 158, 0.7);
+                align-items: center;
+              }
+
+              .first-pos {
+                margin-left: 0px;
+                border-right: 1px solid rgba(158, 158, 158, 0.7);
+                width: 60%;
+                height: 20%;
+              }
+              .posisiton {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .services-container {
+      margin-top: 0px;
+      .text-container {
+        padding: 40px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+      .types-services {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      .types-services div {
+        text-align: center;
+
+        margin-bottom: 30px;
+        flex: 60%;
+      }
+      i {
+        font-size: 25px;
+        color: rgb(33, 179, 159);
+        margin-bottom: 10px;
+      }
+      .service-text {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+      }
+      .service-header {
+        font-size: 16px;
+      }
+    }
+  }
+}
